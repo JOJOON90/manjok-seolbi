@@ -110,6 +110,7 @@ def head(title, desc, canonical, og_image=None, extra_meta=""):
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
 <meta name="twitter:image" content="{og_img_encoded}">
+<meta name="naver-site-verification" content="29c38746f91067e1e1525560834f9090776ab385">
 {extra_meta}<link rel="canonical" href="{punycode_url(canonical)}">
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
