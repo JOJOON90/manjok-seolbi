@@ -4,7 +4,7 @@
 
 :root {
   --black: #1a1a1a;
-  --red: #e8380d;
+  --red: #3d3d3d;
   --yellow: #fee500;
   --white: #ffffff;
   --bg: #fafaf8;
@@ -52,12 +52,12 @@ img { max-width: 100%; height: auto; display: block; }
   align-items: center;
 }
 .logo {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 900;
   letter-spacing: -1px;
   color: var(--black);
 }
-.logo span { color: var(--red); }
+.logo span { color: var(--black); }
 .header-actions { display: flex; gap: 8px; }
 .header-phone {
   background: var(--black);
