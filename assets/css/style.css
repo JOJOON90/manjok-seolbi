@@ -299,15 +299,15 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ── CTA BOX ── */
 .cta-box {
-  background: var(--black);
-  color: var(--white);
+  background: var(--bg);
+  color: var(--black);
   border: 2px solid var(--black);
   padding: 36px 28px;
   margin: 40px 0;
   text-align: center;
 }
 .cta-box h3 { font-size: 20px; font-weight: 900; margin-bottom: 10px; letter-spacing: -0.5px; }
-.cta-box p { font-size: 14px; color: #999; margin-bottom: 20px; }
+.cta-box p { font-size: 14px; color: #666; margin-bottom: 20px; }
 .cta-buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 .btn-cta-call {
   background: var(--red);
@@ -573,7 +573,7 @@ img { max-width: 100%; height: auto; display: block; }
   text-decoration: none;
   white-space: nowrap;
 }
-.floating-call { background: var(--black); color: var(--white); }
+.floating-call { background: var(--bg); color: var(--black); }
 .floating-kakao { background: var(--yellow); color: var(--black); }
 
 /* ── RESPONSIVE ── */
