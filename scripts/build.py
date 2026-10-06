@@ -535,10 +535,16 @@ def build_reviews(all_posts, page=1, per_page=6):
     if page > 1:
         prev = "/reviews/" if page == 2 else f"/reviews/page/{page-1}/"
         pagi += f'<a href="{prev}">‹</a>'
-    for i in range(1, total_pages+1):
+    window = 2  # 현재 페이지 앞뒤로 보여줄 번호 개수
+    shown = {1, total_pages} | set(range(max(1, page-window), min(total_pages, page+window)+1))
+    last = 0
+    for i in sorted(shown):
+        if i - last > 1:
+            pagi += '<span class="gap">…</span>'
         url = "/reviews/" if i == 1 else f"/reviews/page/{i}/"
         cls = ' class="current"' if i == page else ''
         pagi += f'<a href="{url}"{cls}>{i}</a>'
+        last = i
     if page < total_pages:
         pagi += f'<a href="/reviews/page/{page+1}/">›</a>'
     pagi += '</div>'
